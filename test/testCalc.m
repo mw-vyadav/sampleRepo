@@ -4,8 +4,10 @@ classdef testCalc < matlab.unittest.TestCase
     
     methods(Test)
     function testSetup(~)
-            addpath("../src");
-            addpath("../src2");
+            addpath("..\src\folderA\");
+            addpath("..\src\folderB\");
+            addpath("..\src\model\");
+            addpath("..\src2\");
         end
         function testSquare(testCase)
             %TESTCALC Construct an instance of this class
