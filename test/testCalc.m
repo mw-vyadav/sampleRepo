@@ -3,6 +3,10 @@ classdef testCalc < matlab.unittest.TestCase
     %   Detailed explanation goes here
     
     methods(Test)
+    function testSetup(~)
+            addpath("../src");
+            addpath("../src2");
+        end
         function testSquare(testCase)
             %TESTCALC Construct an instance of this class
             %   Detailed explanation goes here
